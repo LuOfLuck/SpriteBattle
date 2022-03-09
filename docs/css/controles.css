@@ -5,7 +5,9 @@
 	flex-direction: column;
 	background: red;
 	position: absolute;
-	
+	bottom: 0px;
+	left: 0px;
+
 }
 .controles--button{
 	height: 50px;
