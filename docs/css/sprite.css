@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*
+Personas
+
+Iori: https://www.spriters-resource.com/resources/sheets/114/117203.png;
+
+Leon: https://www.spriters-resource.com/resources/sheets/114/117199.png;
+
+*/
+body{
+	background-color: blue;
+}
+.batalla{
+	position: relative;
+}
+
+
+.sprite{
+	display: inline-block;
+	transition: left .5s linear;
+	position: absolute;
+
+	background-color: transparent;
+	background-position: 0px 0px;
+	width: 80px;
+	height: 120px;
+	animation: mantener .5s steps(4, end) infinite;
+	
+}
+
+.naruto{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117163.png") no-repeat;
+}
+.kakashi{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117161.png") no-repeat;
+}
+.sakura{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117164.png") no-repeat;
+}
+.sasuke{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117162.png") no-repeat;
+}
+
+.iori{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117203.png") no-repeat;
+}
+.leon{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117199.png") no-repeat;
+}
+.mia{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117206.png") no-repeat;
+}
+.terry{
+	background: url("https://www.spriters-resource.com/resources/sheets/114/117205.png") no-repeat;
+}
+.aliado{
+	background-color: rgb(0, 255, 0, .1);
+}
+.aliado span{
+	display: block;
+	width: 100%;
+	background: green;
+	color: white;
+
+}
+.aliado-1{
+	left: 120px;
+}
+
+.enemy{
+	background-color: rgb(255, 0, 0, .1);
+}
+.enemy span{
+	display: block;
+	width: 100%;
+	background: red;
+	color: white;
+}
+.enemy-1{
+	right: 120px;
+}
+.enemy-1{
+	right: 200px;
+}
+@keyframes mantener {
+	to{
+		background-position: -480px 0px;
+	}
+}
+.correr-derecha{
+	background-position: 0px -240px;
+	animation: correr  .5s steps(6, end) infinite;
+	
+}
+.correr-izquierda{
+	background-position: 0px -240px;
+	animation: correr .5s steps(6, end) infinite;
+}
+
+@keyframes correr {
+	to{
+		background-position: -720px -240px;
+	}
+}
+
+.ataque-basico{
+	width: 120px;
+	background-position: -480px -0px;
+	animation: ataque-basico .5s steps(2, end);
+}
+@keyframes ataque-basico{
+	to{
+		background-position: -720px -0px;
+	}
+}
+
+.ataque-especial{
+	width: 120px;
+	background-position: 0px -120px;
+	animation: ataque-especial .5s steps(3, end);
+}
+@keyframes ataque-especial{
+	to{
+		background-position: -360px -120px;
+	}
+}
+.salto{
+	
+	background-position: -720px -120px;
+	animation: salto .5s steps(3, end);
+}
+@keyframes salto{
+	to{
+		background-position: -360px -120px;
+	}
+}
+
+.recibir-daño{
+	background-position: -360px -120px;
+	animation: recibir-daño .5s steps(1, end);
+}
+@keyframes recibir-daño{
+	to{
+		background-position: -480px -120px;
+	}
+}
+.muerte{
+	background-position: -840px -120px;
+	animation: muerte .5s steps(2, end);
+}
+@keyframes muerte{
+	to{
+		background-position: -840px -120px;
+	}
+}

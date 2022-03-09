@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/controles.css">
+	<link rel="stylesheet" href="css/sprite.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        x
+	<title>Sprites</title>
+</head>
+<body>
+	<div class="app">
+		<h1>Titulo perron</h1>
+		<div class="batalla">
+			<i class="sprite leon aliado"><span>Alidado</span></i>
+			<i class="sprite kakashi enemy enemy-1"><span>Enemy</span></i>
+			<i class="sprite iori enemy enemy-2"><span>Enemy</span></i>
+			<i class="sprite sakura aliado aliado-1"><span>Aliado</span></i>
+		</div>
+		<div class="controles">
+			<div class="controles--superior">
+				<button class="controles--button controles--superior--button" onclick="you.animar('correr-izquierda'); you.rotar(-1)">
+					<i class="controles--button--i fas fa-arrow-left"></i>
+				</button>
+				<button class="controles--button controles--superior--button" onclick="you.animar('salto')">
+					<i class="controles--button--i fas fa-arrow-up"></i>
+				</button>
+				<button class="controles--button controles--superior--button" onclick="you.animar('correr-derecha'); you.rotar(1)">
+					<i class="controles--button--i fas fa-arrow-right"></i>
+				</button>
+			</div>
+			<div class="controles--inferior">
+				<button class="controles--button controles--inferior--button" onclick="you.animar('ataque-basico'); you.ataque(equipoRed, 8)">A</button>
+				<button class="controles--button controles--inferior--button" onclick="you.animar('ataque-especial'); you.ataque(equipoRed, 15)">B</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

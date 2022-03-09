@@ -1,0 +1,41 @@
+.controles{
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background: red;
+	position: absolute;
+	
+}
+.controles--button{
+	height: 50px;
+	font-size: 36px;
+	border: none;
+	color:  blue;
+}
+.controles--superior,
+.controles--inferior{
+	display: flex;
+	margin: 20px 15px 5px 15px;
+}
+.controles--inferior{
+	justify-content: center;
+}
+.controles--inferior--button{
+	margin: 0px 20px 0px 20px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.controles--superior--button{
+	margin: auto;
+	width:28%;
+}
+
+@media(max-width:500px) {
+	.controles{
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+	}
+}
